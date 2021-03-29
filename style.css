@@ -1,42 +1,56 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    color: white;
-}
-
-nav {
-    display: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  color: white;
 }
 
 .hamburger {
-    display: block;
-    cursor: pointer;
-    float: right;
-    padding: 1.2em;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  text-align: right;
+  padding: 1.2em;
+  border: none;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
+.hamburger:focus {
+  outline: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 /*rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
-  
-  /* Rotate last bar */
+
+/* Rotate last bar */
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav-wrap {
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
