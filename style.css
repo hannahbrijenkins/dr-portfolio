@@ -82,9 +82,11 @@ a {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  font-family: "Poppins", Sans-Serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    font-family: "Poppins", Sans-Serif;
+    text-align: center;
 }
