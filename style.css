@@ -7,6 +7,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+
 .hamburger {
   box-sizing: border-box;
   display: block;
@@ -60,7 +73,7 @@ nav {
   display: none;
 }
 
-a {
+nav a {
   flex-grow: inherit;
   padding: 15px;
   border-style: solid;
@@ -69,7 +82,7 @@ a {
 }
 
 .hero {
-    display: flex;
+  display: flex;
   font-family: "Abril Fatface", Cursive;
   font-size: 36px;
   text-align: center;
@@ -82,9 +95,12 @@ a {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  padding: 0 10px 0 10px;
   font-family: "Poppins", Sans-Serif;
 }
