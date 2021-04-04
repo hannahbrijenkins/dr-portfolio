@@ -1,14 +1,14 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const links = document.querySelector(".nav-links li");
+const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener(`click`, ()=>{
-    // animate links
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
     });
 
-    // hamburger animation
-    hamburger.classList.toggle("toggle")
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
 });
