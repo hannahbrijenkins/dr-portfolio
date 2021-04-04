@@ -1,10 +1,14 @@
-function menuFunction(x) {
-    x.classList.toggle("change")
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelector(".nav-links li");
 
-    var y = document.getElementById("myTopnav");
-    if (y.className === "topnav") {
-        y.className += " responsive";
-    } else {
-        y.className = "topnav";
-    }
-};
+hamburger.addEventListener(`click`, ()=>{
+    // animate links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    // hamburger animation
+    hamburger.classList.toggle("toggle")
+});
