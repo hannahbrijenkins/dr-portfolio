@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  background-color: #161824;
+  background-color: white;
 }
 
 /* navbar */
@@ -89,20 +89,63 @@ nav-links li a::before {
   flex: 1 0 auto;
 }
 
+main {
+  margin-top: 0vh;
+}
 /* Hero starts */
-.hero {
-  display: flex;
-  font-family: "Abril Fatface", Cursive;
-  font-size: 36px;
-  text-align: center;
-  flex-direction: column;
+.hero-extender {
+  height: 20vh;
+  margin-top: 0vh;
+  background-color: #c5790f;
+}
+#block-one.wave-bottom {
+  width: 100vw;
+  background: url(assets/dan_portfolio-img.png);
+  background-attachment: fixed;
+  padding: 100px 0 164px 0;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.hero img {
-  width: 90%;
-  margin: 55px;
+#block-one.wave-bottom::before {
+  content: "";
+  background-color: #c5790f;
+  position: absolute;
+  background: #c5790f;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  z-index: -1;
 }
 
+#block-one.wave-bottom::after {
+  content: "";
+  position: absolute;
+  background-image: url(https://jar.is/cdn/img/wave-05.png);
+  background-position: left center;
+  background-repeat: none;
+  background-size: 100% 180px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  @media (max-width: 768px) {
+    height: 128px;
+    background-size: 100% 96px;
+  }
+  @media (max-width: 349px) {
+    height: 96px;
+  }
+}
+
+#block-two p{
+  color: black;
+}
 footer {
   flex-shrink: 0;
   width: 100%;
