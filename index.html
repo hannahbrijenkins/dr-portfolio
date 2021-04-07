@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 
+      -Complete footer to link to socials
+      -About panel
+      -Fix hero and animate
+      -contact page
+      -hamburger menu
+     -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,45 +15,59 @@
       href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300"
       rel="stylesheet"
     />
+    <!-- Coolors -->
+    <!-- https://coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 -->
     <!-- Font-Family: 'Abril Fatface', Cursive;
     Font-Size: 48px;
     Font-Family: 'Poppins', Sans-Serif;
     Font-Size: 14px; -->
-    <link rel="stylesheet" href="/style.css" />
+    <!-- Nav codepen https://codepen.io/hitensharma/pen/dybryGE?editors=1000  -->
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div>
-        <button class="hamburger" onclick="menuFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </button>
-      </div>
-      <div class="nav-wrap">
+    <div class="content">
+      <header>
         <nav>
-          <a href="">About</a>
-          <a href="">Writing Samples</a>
-          <a href="">Published Works</a>
-          <a href="">Services</a>
-          <a href="">Contact</a>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Writing Samples</a></li>
+            <li><a href="#">Hire Me</a></li>
+          </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="hero">
-          <p>Daniel Reisman</p>
-          <img src="/assets/dan_portfolio-img.png" alt="">
+      </header>
+      <div class="hero-extender"></div>
+      <main>
+        
+        <div id="block-one" class="wave-bottom">
+          <div class="content">
+            <h1>Daniel Reisman</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus totam quasi aspernatur atque enim voluptas dolore, accusamus voluptatibus natus laboriosam! Quam magnam perspiciatis ab debitis dolores recusandae, modi pariatur laudantium aspernatur doloribus, ipsum repellat ipsam id facere porro aliquam.</p>
+          </div>
         </div>
-      </section>
-    </main>
+        <div id="block-two">
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo natus voluptates laudantium quo iste! Veritatis error earum quis dolorum maiores, facere commodi quas, accusamus, ducimus reiciendis eum. Est, commodi quia?</p>
+          </div>
+        </div>
+      </main>
+    </div>
     <footer>
-      <a>Instagram</a>
-      <a>Twitter</a>
-      <a>Fiverr</a>
+      <a href="https://www.instagram.com/reismandaniel/" target="_blank"
+        >Instagram</a
+      >
+      <a href="https://twitter.com/reismandaniel_" target="_blank">Twitter</a>
+      <a href="https://www.fiverr.com/danielreisman97" target="_blank"
+        >Fiverr</a
+      >
+      <a href="">Hire Me</a>
     </footer>
   </body>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </html>
